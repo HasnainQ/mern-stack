@@ -1,0 +1,43 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  flex-wrap: wrap;
+  top: 50%;
+  display: flex;
+  left: 50%;
+  padding: 30px 30px 10px 30px;
+  transform: translate(-50%,-50%);
+  justify-content: flex-end;
+}
+form.create.update {
+  width: 100%;
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal-main form + button {
+  background: var(--error);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
